@@ -1,0 +1,101 @@
+/* Stile generale del contenitore */
+div {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+
+}
+
+/* Titolo */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Stili per il modulo */
+form {
+    margin-bottom: 10px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    margin-left: 10px;
+    padding: 5px;
+    width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #062a77;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #007bff;
+}
+
+/* Stili per la lista */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Stili per i link */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Stili per l'elenco delle persone */
+.person-list-item {
+    display: flex;
+    justify-content: space-between; /* Spaziatura tra gli elementi */
+    align-items: center; /* Allinea verticalmente al centro */
+    margin-bottom: 8px; /* Margine inferiore per separare gli elementi */
+}
+
+.delete-button {
+    background-color: #f44336; /* Colore rosso per il pulsante di eliminazione */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}

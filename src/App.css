@@ -28,6 +28,31 @@
   color: #61dafb;
 }
 
+/* Stili per i bottoni di navigazione */
+.nav-buttons {
+  margin-bottom: 20px;
+}
+
+.nav-buttons button {
+  background-color: #062a77;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.nav-buttons button:hover {
+  background-color: #007bff;
+}
+
+.nav-buttons button:focus {
+  outline: none;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -1,0 +1,176 @@
+/* Stili generali per il contenitore dell'ordine */
+.order-form {
+    margin-bottom: 20px;
+}
+
+/* Stili per la lista dei prodotti */
+.products-list {
+    margin-top: 20px;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.product-item:hover {
+    background-color: #f0f0f0;
+}
+
+.product-item.selected {
+    background-color: #062a77;
+    color: #ffffff;
+    border-color: #062a77;
+}
+
+.product-item input[type="checkbox"] {
+    display: none; /* Nasconde il checkbox */
+}
+
+/* Stili per la tendina personalizzata */
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 95%;
+    margin-bottom: 10px; /* Aggiungi uno spazio sotto la tendina */
+}
+
+.dropdown-container {
+    border: 1px solid #062a77;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.selected-item {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Menu a tendina */
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #062a77;
+    border-radius: 4px;
+    background-color: #ffffff;
+    min-height: 100px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown-menu li {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(6, 42, 119, 0.2);
+    border: 1px solid rgba(6, 42, 119, 0.467);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-menu li.selected {
+    background-color: #e0e0e0;
+}
+
+/* Stili per l'elemento della lista degli ordini */
+.order-list-item {
+    display: flex;
+    justify-content: space-between; /* Spaziatura tra il testo e il pulsante di eliminazione */
+    align-items: center; /* Allinea verticalmente al centro */
+    margin-bottom: 10px; /* Margine inferiore per separare gli elementi */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+/* Dettagli dell'ordine */
+.order-details {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.order-details div {
+    margin-bottom: 10px;
+}
+
+/* Azioni sull'ordine */
+.order-actions {
+    display: flex;
+    gap: 10px; /* Spazio tra i pulsanti */
+}
+
+/* Stili per i bottoni */
+.edit-button, .delete-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+/* Stili per il bottone di modifica */
+.edit-button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #45a049; /* Verde più scuro per l'hover */
+}
+
+/* Stili per il bottone di cancellazione */
+.delete-button {
+    background-color: #f44336; /* Rosso */
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f; /* Rosso più scuro per l'hover */
+}
+
+/* Stili per il bottone principale */
+button[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #008CBA; /* Azzurro */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #007bb5; /* Azzurro più scuro per l'hover */
+}
+
+/* Messaggi di errore */
+.error-message {
+    color: red;
+    font-size: 14px;
+}
